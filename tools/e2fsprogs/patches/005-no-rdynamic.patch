@@ -1,0 +1,14 @@
+diff -Nur e2fsprogs-1.42.7.orig/configure e2fsprogs-1.42.7/configure
+--- e2fsprogs-1.42.7.orig/configure    2016-02-04 13:29:11.000000000 +0000
++++ e2fsprogs-1.42.7/configure    2016-02-04 13:29:46.000000000 +0000
+@@ -4224,10 +4224,6 @@
+ ac_link='$CC -o conftest$ac_exeext $CFLAGS $CPPFLAGS $LDFLAGS conftest.$ac_ext $LIBS >&5'
+ ac_compiler_gnu=$ac_cv_c_compiler_gnu
+ 
+-if test "$GCC" = yes; then
+-   RDYNAMIC="-rdynamic"
+-
+-fi
+ ac_ext=c
+ ac_cpp='$CPP $CPPFLAGS'
+ ac_compile='$CC -c $CFLAGS $CPPFLAGS conftest.$ac_ext >&5'

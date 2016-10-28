@@ -18,7 +18,9 @@ HOST_BUILD_PARALLEL:=1
 
 include $(INCLUDE_DIR)/host-build.mk
 
-HOST_CONFIGURE_VARS += gl_cv_func_strstr_linear=no
+HOST_CONFIGURE_VARS += \
+	gl_cv_func_strstr_linear=no \
+	ac_cv_type_struct_sched_param=yes
 
 define Host/Clean
 	-$(MAKE) -C $(HOST_BUILD_DIR) uninstall
